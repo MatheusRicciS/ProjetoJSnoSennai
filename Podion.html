@@ -1,0 +1,81 @@
+<html>
+<head lang="pt-br/en">
+    <title>Poção RGB</title>
+    <link rel="stylesheet" href="Css/potion.css">
+    <link rel="stylesheet" href="Css/scrollbarEfect.css">
+    <link rel="stylesheet" href="Css/geral.css">
+    <link rel="icon" type="image/png" href="images/LogoProject.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 class="titulo">O Circo da Meia Noite</h1>
+        </a>
+        <button class="menu" id="btnMenu">☰</button>
+    </header>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="contato.html">contato</a></li>
+        </ul>
+    </nav>
+
+<section class="flex">
+    <div class="dados">
+        <h2>Faça Sua Poção Aqui:</h2>
+
+        <div class="opcoes">
+            <h3>Escolhe 1:</h3>
+            <label>Menta</label>
+            <input type="radio" name="fase" id="p1" value="#6dff33ff"/>
+
+            <label>Gengibre</label>
+            <input type="radio" name="fase" id="p2" value="#f8d666ff"/>
+
+            <label>Açucar</label>
+            <input type="radio" name="fase" id="p3" value="#fcfcfcff"/>
+
+            <label>Maça</label>
+            <input type="radio" name="fase" id="p4" value="#fff78eff"/>
+        </div>
+        <div class="opcoes">
+            <h3>Decida qual:</h3>
+            <label>Ouro</label>
+            <input type="radio" name="efeto" id="c1" value="#fcd010ff"/>
+            <label>Prata</label>
+            <input type="radio" name="efeto" id="c2" value="#d3d3d3ff"/>
+            <label>Rosa(flor)</label>
+            <input type="radio" name="efeto" id="c3" value="#ff1111ff"/>
+            <label>Água</label>
+            <input type="radio" name="efeto" id="c4" value="#b6fff5ff"/>
+        </div>
+        <div class="opcoes">
+            <h3>Como Preparar:</h3>
+            <label>Quente</label>
+            <input type="radio" name="prepa" id="a1"/>
+            <label>Morno</label>
+            <input type="radio" name="prepa" id="a2"/>
+            <label>Gelado</label>
+            <input type="radio" name="prepa" id="a3"/>
+        </div>
+
+    </div>
+
+    <section class="acao">
+    <div class="bowl" id="frasco">
+        <div class="liquid" id="liquid"></div>
+    </div>
+  </section>  
+
+</section>
+    <footer>Todos os Direitos São Reservados -2025- Matheus Ricci</footer>
+
+    <script src="script/funciona.js"></script>
+    <script src="script/pofet.js"></script>
+</body>
+</html>

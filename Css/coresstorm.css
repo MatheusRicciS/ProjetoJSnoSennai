@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #3f2503;
+    text-align: center;
+}
+
+.orga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 3rem;
+}
+
+.infos{
+    width: 100%;
+    background: linear-gradient(110deg,#fa792f,#adff42,#dc4eff);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.campoAto{
+    position: relative;
+    background: #000;
+    width: 95%;
+    height: 30rem;
+    overflow: hidden;
+    border: solid #7c7c7c;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    width: 5rem;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #464646;
+    transition: 0.5s;
+}
+
+
+.campoAto i{
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent,#fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+}
+
+.campoAto i:nth-child(3n+1){
+    background: linear-gradient(transparent, var(--cor));
+}
+.campoAto i:nth-child(3n+2){
+    background: linear-gradient(transparent, var(--cor2));
+}
+.campoAto i:nth-child(3n+3){
+    background: linear-gradient(transparent, var(--cor3));
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translateY(-200px);
+    }
+    100%
+    {
+        transform: translateY(calc(100% + 200px));
+    }
+}
+
+header{
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(135deg, #ffd8a6,#ffa7a7,#ababff,#a4ff98,#ff8dff);
+    background: url(../images/menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.titulo{
+    height: 2rem;
+    margin: 1rem 0 0 10px;
+    background: linear-gradient(135deg,red,orange,yellow,green,blue,purple);
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+}
+
+.menu{
+    font-size: 26px;
+    border: none;
+    border-radius: 15px;
+    background: #361d00;
+    color:#ffc480;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: 0.3s;
+}
+.menu:hover{
+    background: #643500;
+}
+
+footer{
+    width: 100%;
+    background:#808080;
+    text-align: center;
+    padding: 4px 0px 2px 0px;
+    margin-top: 3rem;
+}
+
+.lbText input{
+    width: 3rem;
+}
+.lbCor input{
+    padding: 0;
+    border: none;
+    background: none;
+}

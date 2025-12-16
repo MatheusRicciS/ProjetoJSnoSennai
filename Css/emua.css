@@ -1,0 +1,143 @@
+body{
+    background: #000 url(../images/ChatGPTimage.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.base{
+    width: 99%;
+    border-radius: 25px;
+    background: var(--marom);
+    border: 2px solid var(--dark-marom);
+    padding: 10px;
+    margin-right: 4px;
+}
+
+.ladEs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 49%;
+}
+
+.lados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.lados img{
+    max-width: 35rem;
+}
+
+.titu{
+    width: 98.7%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    width: 50%;
+    transform: rotate(180deg);
+    background: #000000cc;
+    border-radius: 50px;
+}
+
+
+
+.barraSlide{
+    box-sizing: border-box;
+    width: 100%;
+    height: 38rem;
+    background: var(--dark-marom);
+    padding-bottom: 10px;
+    margin: 3rem 0;
+    position: relative;
+}
+.barraSlide h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.content{
+    height: 35rem;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px rgba(255, 212, 20, 0.75);
+    background: var(--preto);
+}
+
+.content .slide img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.navegar{
+    position: absolute;
+    bottom: 2%;
+    left: 45.5%;
+    display: flex;
+}
+
+.bar{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.bar:hover{
+    background: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+}
+
+.slide{
+     width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}

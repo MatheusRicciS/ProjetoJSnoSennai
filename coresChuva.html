@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/LogoProject.png">
+    <title>ChuvaCores</title>
+    <link rel="stylesheet" href="Css/coresstorm.css">
+    <link rel="stylesheet" href="Css/geral.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 class="titulo">Tempestade de Cores</h1>
+        </a>
+        <button class="menu" id="btnMenu">☰</button>
+    </header>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="contato.html">contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="orga">
+            <div class="infos">
+
+        <label class="lbText"> Digita a quantidade de Gotas você quer:
+            <input type="number" id="quanti" name="quantidade" value="200" />
+        </label>
+<br/>
+        <label class="lbCor"> escolha 3 cores:
+            <input type="color" id="colo1" name="cor1" value="#ff0000"/>
+            <input type="color" id="colo2" name="cor2" value="#00ff00"/>
+            <input type="color" id="colo3" name="cor3" value="#0000ff"/>
+        </label>
+        <button class="btn" id="envi" onclick='atuali()'>OK</button>
+    
+    </div>
+
+    <div class="campoAto" id="acao"></div>
+    </div>
+
+    <footer>Todos os Direitos São Reservados -2025- Matheus Ricci</footer>
+
+    <script src="script/funciona.js"></script>
+    <script src="script/coresC.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body{
+    background: url(../images/cortinaVermelha.png) no-repeat;
+    background-size: cover;
+}
+
+.ordem{
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rumar h2{
+    background: var(--dourado);
+    border-radius: 20px 20px 0 0;
+    padding: 0 15px;
+    border: 2px solid var(--preto);
+}
+
+.intro{
+    background: var(--cinza);
+    width: 80%;
+    height: 1rem;
+    padding: 3px 5px 8px 5px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.parte{
+    width: 13rem;
+    padding: 7px 0 7px 6px;
+    background: var(--marom);
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.parte label{
+    color: var(--branco);
+}
+
+.parte input{
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.camps{
+    display: flex;
+}
+
+.textoP{
+    width: 90%;
+    margin: 1rem 0;
+    background: lightcoral;
+}
+.textoP textarea{
+    width: 100%;
+    height: 9rem;
+    resize: none;
+    overflow: auto;
+}
+
+.btnEnv{
+    width: 98%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+#envi{
+    width: 100%;
+    height: 2rem;
+    background: #008000;
+    border-radius: 20px;
+    border: 3px solid var(--preto);
+    transition: 1s;
+    cursor: pointer;
+}
+#envi:hover{
+    background: #22ff22;
+    transition: 1s;
+}
+
+form{
+    width: 50rem;
+    border-radius: 0 0 20px 20px;
+    background: var(--cinza);
+    border: 2px solid var(--preto);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.conttaos{
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--cinza);
+    margin: 4.2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconsR{
+    width: 4rem;
+    padding: 4px;
+    border-radius: 20px;
+}
+.iconsR img{
+    width: 99%;
+}
+
+.iconsR:nth-of-type(1){
+    background: #1bffff;
+    transition: 1s;
+}
+.iconsR:nth-of-type(2){
+    background: #446abb;
+    transition: 1s;
+}
+.iconsR:nth-of-type(3){
+    background: #ffffff;
+    transition: 1s;
+}
+.iconsR:nth-of-type(4){
+    background: linear-gradient(20deg, #b700ff 5%,#ff11ff 40%, #f00a4f 55%, #f0c400 100%);
+    transition: 1s;
+}
+
+.iconsR:nth-of-type(1):hover{
+    background: #09c2c2;
+    transition: 1s;
+}
+.iconsR:nth-of-type(2):hover{
+    background: #3357a3;
+    transition: 1s;
+}
+.iconsR:nth-of-type(3):hover{
+    background: #aaaaaa;
+    transition: 1s;
+}

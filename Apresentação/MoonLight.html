@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="moonSty.css">
+    <title>Moon Light</title>
+</head>
+<body>
+   <header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+       <li><a href="#" class="active">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Work</a></li>
+       <li><a href="#">Contact</a></li>
+    </ul>
+   </header> 
+   <section>
+    <img src="Images/stars.png" id="stars">
+    <img src="Images/moon.png" id="moon">
+    <img src="Images/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Moon Light</h2>
+    <a href="#" id="btn">Explore</a>
+    <img src="Images/mountains_front.png" id="mountains_front">
+   </section>
+   <div class="sec" id="sec">
+    <h2>Parallax Scrolling Effects</h2>
+    <p>A noite sempre foi o momento favorito de Diana, mesmo quando criança. Foi assim desde que ela estava velha o suficiente para saltar sobre os muros do templo Solari para ver a lua atravessar a abóbada celeste. Ela olhou sobre a cobertura densa da floresta, seus olhos violeta buscando pela lua prateada, mas vendo apenas seu brilho difuso através das nuvens 
+grossas e galhos escuros.<br/>Diana não era de Monte Targon. Um grupo de caçadores Solari a descobriu aninhada entre seus pais congelados — forasteiros que claramente haviam percorrido uma longa jornada até ali. Os caçadores levaram a menina até o templo e a criaram como membro das Tribos do Último Sol, conhecidas por muitos como os Rakkor.
+
+Como todos que professavam a fé dos Solari, ela passou por um rigoroso treinamento físico e religioso. No entanto, diferentemente dos demais, Diana se
+ dedicou a entender a razão do comportamento e das crenças dos Solari. Ela passava as noites enfurnada nas bibliotecas, devorando textos sob a 
+ fraca luz da lua. Paradoxalmente, esse estudo trouxe mais perguntas do que respostas, e as explicações sucintas dos professores também não 
+ ajudaram a saciar a mente curiosa de Diana.<br/><br/>Quando ela começou a notar que alguns volumes tinham capítulos inteiros faltando e que não 
+ havia sequer uma referência à lua, os professores passaram a impor punições severas à garota. A ideia era fazê-la crer pelo cansaço. Do mesmo 
+ modo, os demais acólitos se distanciaram de Diana e de seus questionamentos.
+ Mas havia um raio de esperança nesses anos de isolamento, frustração e confusão: Leona. Como ela era a mais devota entre os colegas de Diana,
+  elas costumavam travar debates intensos. Embora nenhuma das duas conseguisse convencer a outra nessas longas e frequentes discussões, nasceu 
+dali uma forte amizade.<br/><br/>DIANA
+O ESCÁRNIO DA LUA
+Diana não era de Monte Targon. Um grupo de caçadores Solari a descobriu aninhada entre seus pais congelados — forasteiros que claramente haviam percorrido uma longa jornada até ali. Os caçadores levaram a menina até o templo e a criaram como membro das Tribos do Último Sol, conhecidas por muitos como os Rakkor.
+Como todos que professavam a fé dos Solari, ela passou por um rigoroso treinamento físico e religioso. No entanto, diferentemente dos demais, Diana se dedicou a entender a razão do comportamento e das crenças dos Solari. Ela passava as noites enfurnada nas bibliotecas, devorando textos sob a fraca luz da lua. Paradoxalmente, esse estudo trouxe mais perguntas do que respostas, e as explicações sucintas dos professores também não ajudaram a saciar a mente curiosa de Diana.
+Quando ela começou a notar que alguns volumes tinham capítulos inteiros faltando e que não havia sequer uma referência à lua, os professores passaram a impor punições severas à garota. A ideia era fazê-la crer pelo cansaço. Do mesmo modo, os demais acólitos se distanciaram de Diana e de seus questionamentos.
+Mas havia um raio de esperança nesses anos de isolamento, frustração e confusão: Leona. Como ela era a mais devota entre os colegas de Diana, elas costumavam travar debates intensos. Embora nenhuma das duas conseguisse convencer a outra nessas longas e frequentes discussões, nasceu dali uma forte amizade.
+Então, numa bela noite, Diana descobriu um recanto escondido montanha adentro. A luz da lua se espalhava pelas paredes, revelando imagens do sol, de soldados vestindo armaduras de ouro ao lado de guerreiros de prata e imagens correspondentes da lua, tudo isso no topo do maior pico de Targon. Encantada, Diana correu para mostrar essa mensagem esclarecedora a Leona — o sol e a lua não eram inimigos!
+Leona não reagiu muito bem.
+Insistiu para que Diana tirasse essa heresia da cabeça, alertando-a quanto às punições que sofreria se expressasse tais pensamentos aos demais. Diana nunca havia visto sua amiga, que já era bem austera, falar de um jeito tão sério.</p>
+   </div>
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value *1.05 + 'px';
+        mountains_behind.style.top = value *0.5 + 'px';
+        mountains_front.style.top = value *0 + 'px';
+        text.style.marginRight = value *4 + 'px';
+        text.style.marginTop = value *1.5 + 'px';
+        btn.style.marginTop = value *1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+</body>
+</html>
