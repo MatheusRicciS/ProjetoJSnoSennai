@@ -5,10 +5,10 @@ const btnCub = document.querySelector('#btn4')
 const btnAn = document.querySelector('#btn5')
 const btnanim = document.querySelector('#btn6')
 
-let url = ['file:///F:/Pendrive/JSsennaiProjeto/coresChuva.html',
-    'file:///F:/Pendrive/JSsennaiProjeto/Podion.html',
-    'file:///F:/Pendrive/JSsennaiProjeto/MouseC.html',
-    'file:///F:/Pendrive/JSsennaiProjeto/Cubo.html'
+let url = ['./Pagis/coresChuva.html',
+    './Pagis/Podion.html',
+    './Pagis/MouseC.html',
+    './Pagis/Cubo.html'
 ]
 
 function IrChuva(url){

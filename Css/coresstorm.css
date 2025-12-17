@@ -82,7 +82,7 @@ header{
     width: 100%;
     height: 8rem;
     background: linear-gradient(135deg, #ffd8a6,#ffa7a7,#ababff,#a4ff98,#ff8dff);
-    background: url(../images/menu.png);
+    background: url(../../images/menu.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

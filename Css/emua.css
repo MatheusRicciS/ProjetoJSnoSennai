@@ -1,5 +1,5 @@
 body{
-    background: #000 url(../images/ChatGPTimage.png);
+    background: url(../images/ChatGPTimage.png);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
